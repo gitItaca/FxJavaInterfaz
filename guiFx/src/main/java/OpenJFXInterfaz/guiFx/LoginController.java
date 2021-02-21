@@ -61,7 +61,6 @@ public class LoginController {
         password = showPassField.getText();				//Guardo el texto de la contrasenha escrito en el TextField
         passField.setText(password);					//Escribo el texto guardado en el PasswordField
         
-//        passField.setText(passField.getText());
 
     }
 }

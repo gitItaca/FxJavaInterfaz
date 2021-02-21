@@ -5,3 +5,9 @@
 .checkBox {
 	-fx-border-color: #40A8D9;
 }
+
+.menuBar .label {
+	-fx-font-size: 15;
+	-fx-font-family: System;
+
+}
