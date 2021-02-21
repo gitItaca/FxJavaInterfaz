@@ -1,3 +1,7 @@
 .button {
 	-fx-background-color: #40A8D9;
 }
+
+.checkBox {
+	-fx-border-color: #40A8D9;
+}
