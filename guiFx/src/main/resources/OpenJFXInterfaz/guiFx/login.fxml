@@ -65,7 +65,7 @@
                   <Insets left="5.0" />
                </GridPane.margin></CheckBox>
             <Text fx:id="textObligatoryFields" fill="#b51313" strokeType="OUTSIDE" strokeWidth="0.0" text="* Check and fill all the red elements." visible="false" wrappingWidth="196.638671875" GridPane.rowIndex="3" />
-            <Text fill="#363636" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot password" textAlignment="RIGHT" wrappingWidth="183.798828125" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <Text fill="#363636" onMouseClicked="#forgotPasswordWindow" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot password" textAlignment="RIGHT" wrappingWidth="183.798828125" GridPane.columnSpan="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
    </children>

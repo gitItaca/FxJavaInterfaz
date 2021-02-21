@@ -1,13 +1,20 @@
 package OpenJFXInterfaz.guiFx;
 
+import java.io.IOException;
+
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class LoginController {
 	
@@ -60,7 +67,20 @@ public class LoginController {
         }
         password = showPassField.getText();				//Guardo el texto de la contrasenha escrito en el TextField
         passField.setText(password);					//Escribo el texto guardado en el PasswordField
-        
+    }
+	
+	@FXML
+	public void forgotPasswordWindow(MouseEvent  event) throws IOException {	
+		 Scene scene = new Scene(loadFXML("recoverPassword"), 310, 220);
 
+		 Stage stage = new Stage();
+	     stage.setResizable(false);
+	     stage.initStyle(StageStyle.UNDECORATED);
+	     stage.setScene(scene);
+	     stage.show();
+	}
+	private static Parent loadFXML(String fxml) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Login.class.getResource(fxml + ".fxml"));
+        return fxmlLoader.load();
     }
 }
