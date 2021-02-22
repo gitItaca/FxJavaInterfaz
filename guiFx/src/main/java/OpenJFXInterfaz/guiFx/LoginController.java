@@ -83,4 +83,5 @@ public class LoginController {
         FXMLLoader fxmlLoader = new FXMLLoader(Login.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
     }
+	
 }
